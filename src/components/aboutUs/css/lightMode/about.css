@@ -1,0 +1,53 @@
+.about-page {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.banner-ad-right {
+    height: 70vh;
+    width: 100px;
+    background-color: red;
+    z-index: 1000;
+    margin-top: 5vh;
+    right: 10px;
+    position: fixed;
+    background-image: url('https://lh3.googleusercontent.com/proxy/T8u4dbJpVYgZ14eDO9cLbIKzC5qK8piJahA6JPBurKILMrIOrBRJfbs90zR4OMlX3TdBVb8cwN5QZrMq5v1ikIWhmTLcVL38RSGIEaSpJQzXYQJKojvq5Exmp1U3mOR1vN7nQunlodTZsw');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.banner-ad-left {
+    height: 70vh;
+    width: 100px;
+    background-color: red;
+    z-index: 1000;
+    margin-top: 5vh;
+    left: 10px;
+    position: fixed;
+    background-image: url('https://lh3.googleusercontent.com/proxy/T8u4dbJpVYgZ14eDO9cLbIKzC5qK8piJahA6JPBurKILMrIOrBRJfbs90zR4OMlX3TdBVb8cwN5QZrMq5v1ikIWhmTLcVL38RSGIEaSpJQzXYQJKojvq5Exmp1U3mOR1vN7nQunlodTZsw');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.banner-ad-bottom {
+    display: none;
+    background-image: url('https://lh3.googleusercontent.com/proxy/T8u4dbJpVYgZ14eDO9cLbIKzC5qK8piJahA6JPBurKILMrIOrBRJfbs90zR4OMlX3TdBVb8cwN5QZrMq5v1ikIWhmTLcVL38RSGIEaSpJQzXYQJKojvq5Exmp1U3mOR1vN7nQunlodTZsw');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    opacity: 0.8;
+}
+
+@media (max-width:900px) {
+    .banner-ad-bottom {
+        display: block;
+    }
+    .banner-ad-left {
+        display: none;
+    }
+    .banner-ad-right {
+        display: none;
+    }
+}

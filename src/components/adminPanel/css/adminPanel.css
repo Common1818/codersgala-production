@@ -1,0 +1,33 @@
+.adminpanel-container {
+    background-color: #fff;
+    min-height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.make-admin-form h2 {
+    text-align: center;
+}
+
+.make-admin-form {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.users-table {
+    margin-top: 50px;
+}
+
+.actions button {
+    margin: 3px;
+}
+
+.status-message {
+    text-align: center;
+    color: red;
+    font-weight: 900;
+    margin: 10px;
+}

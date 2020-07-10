@@ -1,0 +1,51 @@
+body.dark .card-container {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+body.dark .card-container .card {
+    color: #fff;
+}
+
+body.dark .speciality-heading h2 {
+    background-color: black !important;
+    color: white;
+}
+
+body.dark .topics-ovr-cont {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+body.dark .topics-ovr-cont h3 {
+    color: #dbb2ff;
+}
+
+body.dark .topics-ovr-cont i {
+    color: #ff6978 !important;
+}
+
+body.dark .link {
+    background-color: transparent !important;
+}
+
+body.dark .button-outline {
+    color: #fff !important;
+}
+
+body.dark .topics-overview {
+    border: 1px solid #1f2125;
+    /* background-color: 1f2125 !important; */
+}
+
+body.dark hr {
+    background-color: #1f2125 !important;
+}
+
+body.dark .topics-ovr-cont .card {
+    box-shadow: 0 0 20px #2d3436 !important;
+}
+
+body.dark .topic-ovr-container .accordion {
+    border-right: 1px solid #1f2125;
+}

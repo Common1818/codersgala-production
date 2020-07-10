@@ -1,0 +1,12 @@
+body.dark .profile-card header {
+    background-color: #252627;
+    color: #da4167;
+}
+
+body.dark .profile-card .profile-bio {
+    background: #111;
+}
+
+body.dark .profile-card header h1 {
+    color: #fff !important;
+}

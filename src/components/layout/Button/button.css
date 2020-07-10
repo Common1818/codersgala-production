@@ -1,0 +1,50 @@
+.button {
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button svg {
+    height: 55px;
+    width: 150px;
+    fill: none;
+    border-radius: 10px;
+    stroke-width: 3;
+}
+
+.button svg .o1 {
+    stroke: #ffa114;
+    fill: #e91e63;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.button svg .o2 {
+    stroke: white;
+    stroke-dasharray: 20 420;
+    stroke-dashoffset: 20;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.button span {
+    position: absolute;
+    margin: auto 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.button:hover .o1 {
+    fill: rgba(204, 129, 16, 0.3);
+}
+
+.card:hover .button:hover .o2 {
+    stroke-dashoffset: -420;
+}

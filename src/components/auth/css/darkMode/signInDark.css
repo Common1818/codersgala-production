@@ -1,0 +1,44 @@
+body.dark .login-form {
+    background-color: #123;
+}
+
+body.dark .login-form-container h1 {
+    color: #f1f1f1;
+}
+
+body.dark .login-form-container {
+    background: #111;
+}
+
+body.dark .login-form-container label {
+    color: #ffbd2f;
+    font-weight: 600;
+    font-size: 0.85em;
+}
+
+body.dark .form-field input::placeholder {
+    color: #111;
+}
+
+body.dark .form-options a {
+    color: #0dd3ac;
+}
+
+body.dark .sign-in-section h6 {
+    color: #0dd3ac;
+}
+
+body.dark .login-form-container .sign-in-section p {
+    color: #0dd3ac;
+}
+
+body.dark .login-form-container h3 {
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (max-width: 500px) {
+    body.dark .login-form {
+        background: #123;
+    }
+}

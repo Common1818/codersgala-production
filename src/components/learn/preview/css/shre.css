@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap');
+.popover-body1 {
+    /* background-color: transparent !important; */
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+    padding: 5px 20px 5px 20px;
+    /* opacity: 0.8 !important; */
+}
+
+.share-overlay-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.share-overlay-icons .icon img {
+    margin: 1px;
+    width: 30px;
+}
+
+.share-overlay-icons .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.popover-cont {
+    background: transparent !important;
+    right: 10px;
+}
+
+.popover-body1 {
+    background: #fff !important;
+}
+
+
+/* dark mode */
+
+body.dark .popover-body1 {
+    background: #111 !important;
+}
+
+body.dark hr {
+    background-color: #f1f1f1;
+}

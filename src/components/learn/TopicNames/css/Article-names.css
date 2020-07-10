@@ -1,0 +1,216 @@
+/* articles-topic container */
+
+.speciality-topic-container:hover {
+    color: black;
+}
+
+.speciality-topic-container {
+    height: auto;
+    width: 100%;
+    color: black;
+    background-color: transparent;
+}
+
+.learn-container {
+    min-height: 80vh;
+    /* width: 100%; */
+}
+
+.topicName {
+    color: #111;
+    font-size: 1.2rem;
+}
+
+
+/*  */
+
+
+/* down article icon */
+
+.article-dwn {
+    /* margin-bottom: 20px !important; */
+    color: #1c3144;
+    transition: all 0.3s linear;
+}
+
+.article-dwn.rotate {
+    color: #6e44ff;
+    transform: rotateZ(180deg);
+}
+
+.read-icon {
+    height: 70px;
+}
+
+.speciality-topic-container .accordion {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+
+/* 
+.speciality-topic-container button .fa-angle-down {
+    position: relative;
+    bottom: 10px;
+} */
+
+
+/* read book icon */
+
+.reading-icon {
+    float: right;
+    opacity: 0.9;
+}
+
+.read-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    font-weight: 700;
+}
+
+
+/* article name  */
+
+.read {
+    color: blue;
+}
+
+.read.active {
+    color: tomato;
+}
+
+
+/*  */
+
+.update-delete {
+    display: flex;
+}
+
+.article-read {
+    color: #a663cc;
+}
+
+.article-name {
+    margin-left: 10px;
+    color: #4a4e50;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.article-name.active {
+    color: #6e44ff;
+}
+
+.article-name:hover {
+    margin-left: 40px;
+    color: black;
+    font-weight: 700;
+}
+
+.read-book-svg {
+    position: absolute;
+    right: 50px;
+    bottom: 12px;
+}
+
+.article-toggle {
+    position: relative;
+    top: -7px;
+}
+
+body.dark .topicName {
+    color: #f1f1f1 !important;
+}
+
+body.dark .article-name {
+    color: #d7f5dd !important;
+    font-weight: 500;
+}
+
+@media (max-width: 620px) {
+    .read-book-svg {
+        position: absolute;
+        right: 50px;
+        bottom: 2px;
+    }
+    .article-toggle {
+        position: relative;
+        top: -10px;
+    }
+}
+
+.icon {
+    display: inline-block;
+    fill: currentColor;
+    margin-top: -0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+body.dark .icon {
+    fill: #7161EF;
+}
+
+.icon:hover {
+    background-color: transparent;
+}
+
+.icon--2x {
+    width: 2em;
+    height: 2em;
+}
+
+.icon--3x {
+    width: 3em;
+    height: 3em;
+}
+
+.icon--4x {
+    width: 4em;
+    height: 4em;
+}
+
+.icon--full {
+    width: 100%;
+    height: 100%;
+}
+
+.icon--fill {
+    background-color: currentColor;
+    fill: #fff;
+}
+
+.icon--round {
+    border-radius: 4px;
+}
+
+.icon--circle {
+    border-radius: 50%;
+}
+
+.icon--border {
+    border: 1px solid currentColor;
+}
+
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #4691f6;
+}
+
+.svg-icon circle {
+    stroke: #4691f6;
+    stroke-width: 1;
+}

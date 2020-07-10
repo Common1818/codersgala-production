@@ -1,0 +1,137 @@
+footer {
+    background: #f1f1f1;
+    padding: 30px 60px;
+}
+
+footer .logo {
+    width: 180px;
+    font-size: 2.5rem;
+}
+
+.github {
+    border-radius: 50%;
+}
+
+.footer-container {
+    max-width: 1300px;
+    min-height: 20vh;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media img {
+    width: 35px;
+}
+
+.social-media a {
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.social-media a:hover {
+    color: #fc5c65;
+}
+
+.right-col h1 {
+    font-size: 26px;
+}
+
+.border {
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+}
+
+.border.anim {
+    animation: footerLoader 1s infinite;
+}
+
+@keyframes footerLoader {
+    0% {
+        width: 100px;
+    }
+    50% {
+        width: 200px;
+        background: purple;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.txtb {
+    flex: 1;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+.newsletter-form .btn {
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.newsletter-form .btn:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:960px) {
+    .footer-container {
+        max-width: 600px;
+    }
+    .right-col {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .left-col {
+        width: 100%;
+        text-align: center;
+    }
+    footer {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .newsletter-form .btn {
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "functions": {
+        "predeploy": [],
+        "source": "functions"
+    },
+    "hosting": {
+        "public": "build",
+        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "rewrites": [{
+            "source": "**",
+            "function": "ssrapp"
+        }]
+    }
+}

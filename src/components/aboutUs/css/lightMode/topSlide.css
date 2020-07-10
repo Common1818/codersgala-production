@@ -1,0 +1,87 @@
+/* top slide container */
+
+.top-slide {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    line-height: 1;
+    padding-top: 20vh;
+}
+
+
+/* ---------------------------------------- */
+
+
+/* scroll gif */
+
+.scroll-icon {
+    width: 300px;
+    position: relative;
+    top: 50px;
+    left: 37%;
+}
+
+
+/* ---------------------------------------- */
+
+
+/* heading */
+
+.top-slide h1 {
+    padding-top: 50px;
+    font-family: 'Amatic SC', cursive;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    font-size: 8rem;
+    text-transform: uppercase;
+    line-height: 1em;
+    background-image: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+
+/* ------------------------------- */
+
+
+/* saubheading */
+
+.subheading-about {
+    text-align: center;
+    position: relative;
+    top: 7vh;
+    color: #c1292e;
+    font-size: 3rem;
+    font-family: 'Coming Soon', cursive;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+/* ---------------------------- */
+
+@media only screen and (max-width: 500px) {
+    .top-slide h1 {
+        font-size: 6rem;
+    }
+    .subheading-about {
+        top: 2vh;
+    }
+    .top-slide {
+        padding-top: 10vh;
+    }
+    .scroll-icon {
+        left: 17%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 822px) {
+    .subheading-about {
+        top: 5vh;
+        font-size: 2.5rem;
+    }
+}
+
+
+/* --------------------------------- */

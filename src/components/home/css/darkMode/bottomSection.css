@@ -1,0 +1,11 @@
+body.dark .hero-box {
+    background: #00171F;
+}
+
+body.dark .hero-box__title {
+    color: white;
+}
+
+body.dark .hero-box__body {
+    color: #78CAD2;
+}

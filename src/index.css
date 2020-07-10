@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+/* CSS Imports */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+/* highlight js */
+
+@import "../node_modules/highlight.js/styles/gradient-dark.css";
+@import "./commonStyles/font-families.css";
+
+/* ABOUT PAGE*/
+
+@import "./components/aboutUs/css/lightMode/about.css";
+@import "./components/aboutUs/css/lightMode/aboutDin.css";
+@import "./components/aboutUs/css/lightMode/aboutUs.css";
+@import "./components/aboutUs/css/lightMode/contactUs.css";
+@import "./components/aboutUs/css/lightMode/profileCard.css";
+@import "./components/aboutUs/css/lightMode/topSlide.css";
+@import "./components/aboutUs/css/darkMode/aboutDinDark.css";
+@import "./components/aboutUs/css/darkMode/aboutUsDark.css";
+@import "./components/aboutUs/css/darkMode/profileCardDark.css";
+@import "./components/aboutUs/css/darkMode/topSlideDark.css";
+
+/* AUTH */
+
+@import "./components/auth/css/lightMode/signIn.css";
+@import "./components/auth/css/darkMode/signInDark.css";
+
+/* HOME*/
+
+@import "./components/home/css/home.css";
+@import "./components/home/css/lightMode/bottomSection.css";
+@import "./components/home/css/lightMode/topSection.css";
+@import "./components/home/css/darkMode/bottomSection.css";
+@import "./components/home/css/darkMode/topSectionDark.css";
+
+/* LEARN*/
+
+@import "./components/learn/articles/css/addArticle.css";
+@import "./components/learn/articles/css/article.css";
+@import "./components/learn/learningCards/css/addButton.css";
+@import "./components/learn/learningCards/css/card2.css";
+@import "./components/learn/preview/css/Preview-page-dark.css";
+@import "./components/learn/preview/css/Preview-page.css";
+@import "./components/learn/preview/css/shre.css";
+@import "./components/learn/TopicNames/css/AddTopicNames.css";
+@import "./components/learn/TopicNames/css/Article-names.css";
+
+/* PRRELOADER */
+
+@import "./components/Preloader/preloader.css";
+@import "./components/learn/learningCards/Preloader/preloader.css";
+
+/* REFERRAL SYSTEM */
+
+@import "./components/referralSystem/referralSystem.css";
+
+/* LAYOUT */
+
+@import "./components/layout/Button/button.css";
+@import "./components/layout/css/lightMode/footer.css";
+@import "./components/layout/css/lightMode/navbar.css";
+@import "./components/layout/css/darkMode/footerDark.css";
+@import "./components/layout/css/darkMode/navbarDark.css";
+
+/* EDITOR*/
+
+@import "./components/editor/editor.css";
+@import "./components/editor/editorCss.css";
+
+/* ADMIN PANEL*/
+
+@import "./components/adminPanel/css/adminPanel.css";
+
+/*  */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container-width {
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.button-outline {
+    outline-color: rgb(38, 10, 65);
+    color: rgb(38, 10, 65);
+    border: 1px solid rgb(104, 57, 148);
+}
+
+.button-outline:hover {
+    background-color: rgb(38, 10, 65);
+    color: white;
+}
+
+.hljs-attr {
+    color: #FC5C65 !important;
+}
+
+element.style {
+    padding-left: -1px;
+    padding-right: -1px;
+}
+
+#text {
+    color: red;
+}
+
+
+/* remove border from button on click */
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+@media(max-width:500px) {
+    .col {
+        padding: 1px;
+    }
+}
+
+.ql-editor strong {
+    font-weight: 800;
+}
+
+.ql-editor img.ql-align-center {
+    display: block;
+    margin: 0px auto;
+}

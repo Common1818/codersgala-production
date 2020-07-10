@@ -1,0 +1,28 @@
+body.dark .bg-light {
+    background-color: #1a1423 !important;
+}
+
+body.dark .nav-link {
+    color: #fffcf9 !important;
+}
+
+body.dark .logo {
+    color: #f1f1f1 !important;
+}
+
+body.dark .nav-item.active .nav-link {
+    color: #999 !important;
+}
+
+body.dark .points-box {
+    background-color: #ff6978;
+}
+
+body.dark nav .logo {
+    background: #03001e;
+    background: -webkit-linear-gradient( to right, #f1f1, #ec38bc, #7303c0, #03001e);
+    background: linear-gradient(to right, #f1f1, #ec38bc, #7303c0, #03001e);
+    border-radius: 2px;
+    padding: 5px !important;
+    color: #f5f2d0 !important;
+}

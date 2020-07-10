@@ -1,0 +1,12 @@
+body.dark .about-us-container {
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+body.dark .about-us-text {
+    color: #fff;
+}
+
+body.dark .about-us-heading h2 {
+    color: #6610f2;
+}
