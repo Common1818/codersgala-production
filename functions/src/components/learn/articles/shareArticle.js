@@ -50,6 +50,9 @@ var ShareArticle = function ShareArticle(_ref) {
   }, "Copied to ") : /*#__PURE__*/_react.default.createElement("article", {
     className: "copyto"
   }, "Copy to"), /*#__PURE__*/_react.default.createElement(_reactCopyToClipboard.CopyToClipboard, {
+    onClick: function onClick() {
+      return console.log(value);
+    },
     text: value,
     onCopy: function onCopy() {
       return setCopied(true);

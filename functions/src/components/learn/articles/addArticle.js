@@ -19,23 +19,25 @@ var _editor = _interopRequireDefault(require("../../editor/editor"));
 
 var _articleFunctions = require("../../../crudFunctions/articleFunctions");
 
-var _jquery = _interopRequireDefault(require("jquery"));
-
 var _articleContext = require("../../../contexts/articleContext");
 
+var _jquery = _interopRequireDefault(require("jquery"));
+
 /* eslint-disable */
+var firebase = require('firebase');
+
 var AddArticle = function AddArticle(props) {
-  var _useState = (0, _react.useState)(""),
+  var _useState = (0, _react.useState)(''),
       _useState2 = (0, _slicedToArray2.default)(_useState, 2),
       ArticleContent = _useState2[0],
       setArticleContent = _useState2[1];
 
-  var _useState3 = (0, _react.useState)(""),
+  var _useState3 = (0, _react.useState)(''),
       _useState4 = (0, _slicedToArray2.default)(_useState3, 2),
       ArticleName = _useState4[0],
       setArticleName = _useState4[1];
 
-  var _useState5 = (0, _react.useState)(""),
+  var _useState5 = (0, _react.useState)(''),
       _useState6 = (0, _slicedToArray2.default)(_useState5, 2),
       keywords = _useState6[0],
       setArticleKeywords = _useState6[1];
@@ -50,7 +52,7 @@ var AddArticle = function AddArticle(props) {
       id = _props$match$params.id;
 
   var goToTop = function goToTop() {
-    (0, _jquery.default)("html, body").animate({
+    (0, _jquery.default)('html, body').animate({
       scrollTop: 10
     }, 600);
   };
@@ -71,6 +73,7 @@ var AddArticle = function AddArticle(props) {
 
   var handleAdd = function handleAdd(e) {
     e.preventDefault();
+    var functions = firebase.functions();
     setLoading(true);
     (0, _articleFunctions.addArticle)({
       ArticleContent: ArticleContent,
@@ -79,6 +82,7 @@ var AddArticle = function AddArticle(props) {
       TopicId: id,
       keywords: keywords
     }, dispatch);
+    functions.httpsCallable('generateSiteMap');
   };
 
   if (complete) {
@@ -140,7 +144,7 @@ var AddArticle = function AddArticle(props) {
   }, /*#__PURE__*/_react.default.createElement("span", {
     className: "sr-only"
   }, "Loading..."))) : /*#__PURE__*/_react.default.createElement("div", {
-    className: "text-center " + "text-" + color
+    className: 'text-center ' + 'text-' + color
   }, message)))))), /*#__PURE__*/_react.default.createElement("a", {
     href: "#"
   }, /*#__PURE__*/_react.default.createElement("i", {

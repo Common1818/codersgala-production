@@ -1,20 +1,25 @@
 /* eslint-disable */
-import React, { useState, useContext } from "react";
-import { Row, Col, Spinner } from "react-bootstrap";
-import Editor from "../../editor/editor";
-import { addArticle } from "../../../crudFunctions/articleFunctions";
-import $ from "jquery";
-import { ArticlesContext } from "../../../contexts/articleContext";
+import React, { useState, useContext } from 'react';
+import { Row, Col, Spinner } from 'react-bootstrap';
+
+import Editor from '../../editor/editor';
+
+import { addArticle } from '../../../crudFunctions/articleFunctions';
+import { ArticlesContext } from '../../../contexts/articleContext';
+
+import $ from 'jquery';
+
+const firebase = require('firebase');
 
 const AddArticle = (props) => {
-  const [ArticleContent, setArticleContent] = useState("");
-  const [ArticleName, setArticleName] = useState("");
-  const [keywords, setArticleKeywords] = useState("");
+  const [ArticleContent, setArticleContent] = useState('');
+  const [ArticleName, setArticleName] = useState('');
+  const [keywords, setArticleKeywords] = useState('');
   const [Loading, setLoading] = useState(false);
   const { SpecialityId, id } = props.match.params;
 
   const goToTop = () => {
-    $("html, body").animate({ scrollTop: 10 }, 600);
+    $('html, body').animate({ scrollTop: 10 }, 600);
   };
 
   const { dispatch } = useContext(ArticlesContext);
@@ -29,6 +34,7 @@ const AddArticle = (props) => {
   };
   const handleAdd = (e) => {
     e.preventDefault();
+    const functions = firebase.functions();
     setLoading(true);
 
     addArticle(
@@ -41,6 +47,8 @@ const AddArticle = (props) => {
       },
       dispatch
     );
+
+    functions.httpsCallable('generateSiteMap');
   };
 
   if (complete) {
@@ -52,27 +60,27 @@ const AddArticle = (props) => {
   // console.log(this.props);
 
   return (
-    <Row className="full-view-article p-2">
-      <div className="share-icons"></div>
+    <Row className='full-view-article p-2'>
+      <div className='share-icons'></div>
 
       <Col sm={1}></Col>
 
-      <Col id="top" sm={10}>
-        <div className="">
-          <div className="">
-            <h4 className="" id="">
+      <Col id='top' sm={10}>
+        <div className=''>
+          <div className=''>
+            <h4 className='' id=''>
               Add a Article
             </h4>
           </div>
 
-          <div className="modal-body content">
+          <div className='modal-body content'>
             <form>
-              <div className="form-group">
+              <div className='form-group'>
                 <input
-                  type="text"
-                  id="ArticleName"
-                  placeholder="Article Name"
-                  className="form-control"
+                  type='text'
+                  id='ArticleName'
+                  placeholder='Article Name'
+                  className='form-control'
                   onChange={(e) => {
                     setArticleName(e.target.value);
                   }}
@@ -80,10 +88,10 @@ const AddArticle = (props) => {
                 <br />
 
                 <input
-                  type="text"
-                  id="keywords"
-                  placeholder="Article Description"
-                  className="form-control"
+                  type='text'
+                  id='keywords'
+                  placeholder='Article Description'
+                  className='form-control'
                   onChange={(e) => {
                     setArticleKeywords(e.target.value);
                   }}
@@ -91,23 +99,23 @@ const AddArticle = (props) => {
 
                 <br />
 
-                <Editor handleEditor={handleEditor} defaultValue="" />
+                <Editor handleEditor={handleEditor} defaultValue='' />
 
-                <div className="add-article-button">
+                <div className='add-article-button'>
                   <button
-                    className="btn btn-outline-primary m-3"
+                    className='btn btn-outline-primary m-3'
                     onClick={handleAdd}
                   >
                     Add
                   </button>
                   {Loading && !complete ? (
-                    <div className="text-center">
-                      <Spinner animation="border" role="status">
-                        <span className="sr-only">Loading...</span>
+                    <div className='text-center'>
+                      <Spinner animation='border' role='status'>
+                        <span className='sr-only'>Loading...</span>
                       </Spinner>
                     </div>
                   ) : (
-                    <div className={"text-center " + "text-" + color}>
+                    <div className={'text-center ' + 'text-' + color}>
                       {message}
                     </div>
                   )}
@@ -116,12 +124,12 @@ const AddArticle = (props) => {
             </form>
           </div>
         </div>
-        <a href="#">
+        <a href='#'>
           <i
             onClick={goToTop}
-            rel="nofollow"
-            id="go-to-top"
-            className=" top-icon fas fa-angle-double-up"
+            rel='nofollow'
+            id='go-to-top'
+            className=' top-icon fas fa-angle-double-up'
           ></i>
         </a>
       </Col>
